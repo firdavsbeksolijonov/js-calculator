@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="fullWarpper">
+            <h1  class="centerText" id="centerText">
+                Calculator
+            </h1>
+            <div class="Calc_Body">
+                <input type="text" class="display" disabled placeholder="0">
+                <div class="calcItem2">
+                    
+                    <button class="btn" onclick="clearDisplay('C')" id="first_btns">C</button>
+                    <button  id="first_btns" onclick="addToDisplay('%')">%</button>
+                    <button id="first_btns" onclick="lastRemoveDisplay('Del')">Del</button>
+                    <button onclick="addToDisplay('3')">3</button>
+                    <button onclick="addToDisplay('7')">7</button>
+                    <button onclick="addToDisplay('8')">8</button>
+                    <button value="*" id="second_btns" onclick="addToDisplay('*')">*</button>
+                    <button onclick="addToDisplay('9')">9</button>
+                    <button onclick="addToDisplay('4')">4</button>
+                    <button onclick="addToDisplay('5')">5</button>
+                    <button onclick="addToDisplay('-')" id="second_btns">-</button>
+                    <button onclick="addToDisplay('6')">6</button>
+                    <button onclick="addToDisplay('1')">1</button>
+                    <button onclick="addToDisplay('2')">2</button>
+                    <button onclick="addToDisplay('+')" id="second_btns">+</button>
+                    <button onclick="addToDisplay('/')">/</button>
+                    <button onclick="addToDisplay('0')">0</button>
+                    <button onclick="addToDisplay('.')">.</button>
+                    <button  onclick="calculate('=')" id="second_btns">=</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT HERE -->
+    <script src="./script.js"></script>
+</body>
+</html>
